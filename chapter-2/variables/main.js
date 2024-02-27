@@ -217,13 +217,103 @@ console.log(nrDec)
 //  блок переменных для сторон треугольника.
 
 
-const side1 = prompt('Введите первую сторону треугольника');
-const side2 = prompt('Введите вторую сторону треугольника');
-const resultSide = (side1 * side1) + (side2 * side2);
-//const side3 = Math.sqrt(resultSide);
-alert(`Значение переменной side3: ${resultSide}`);
+// const side1 = prompt('Введите первую сторону треугольника');
+// const side2 = prompt('Введите вторую сторону треугольника');
+// const resultSide = (side1 * side1) + (side2 * side2);
+// //const side3 = Math.sqrt(resultSide);
+// alert(`Значение переменной side3: ${resultSide}`);
 
 //-------------------------------------------------------------------------------------------------------
+
+// ----------------------------------------------Операторы присваивания --------------------------------
+
+let xPr = 2
+xPr += 2  // x = x + 2
+console.log(xPr)
+
+xPr -= 2 // x = x - 2
+console.log(xPr)
+
+xPr *= 6 // x = x * 6
+console.log(xPr)
+
+xPr /= 3
+console.log(xPr)
+
+xPr **= 2
+console.log(xPr)
+
+xPr %= 3
+console.log(xPr)
+
+// ------------------------------------------------------- Практичское занятие 2.4 ----------------------------
+
+let numA = 5
+let numB = 10
+let numC = 15
+
+console.log(numB += numA) // сложил две переменные с помощью оператора присваивания
+console.log(numA /= numC)
+console.log([numC, numB] = [numB, numC])
+
+console.log('Result 259', numA)
+console.log('Result 260', numB)
+console.log('Result 261', numC)
+
+// ------------------------------------------------Операторы сравнения--------------------------------------------------------------
+
+let xSr = 5
+let ySr = '5'
+console.log(xSr == ySr) // тут сравниваются по типу данных и будет true
+console.log(xSr === ySr) // тут сравниваются по типу данных и будет false
+
+console.log(xSr != ySr) // при сравнении даст false т.к
+
+// ----------------------------------------------- Больше и меньше -----------------------------------------------------------------
+
+let xB = 5
+let yM = 6
+console.log(yM > xB) // >
+console.log(yM > yM) // false
+console.log(yM >= xB) // true
+
+// -------------------------------------------------- Логические операторы ---------------------------------------------------------
+
+// &&
+let xI = 1
+let yI = 2
+let zI = 3
+
+console.log(xI < yI && yI < zI) // false && false результат будет true т.к два логических выражения верны и результат будет true
+console.log(xI > yI && yI < zI) // false && false  результат будет true т.к два логических выражения верны и результат будет false
+
+// или ||
+console.log(xI > yI || yI < zI) // false || true это выражение вернёт true
+console.log(xI > yI || yI > zI) // false || false это выражение вернёт false
+
+// не (!)
+let xOtr = false
+console.log(!xOtr) // результат будет true, я отрицаю изначальное значение
+
+let xOTR = 1
+let yOTR = 2
+console.log(!(xOTR < yOTR)) // тут 1 < 2 но я отрицаю это значение и оно становиться false
+
+// --------------------------------------------- Самостоятельная работа -----------------------------------------
+let mil = 130
+const koeff = 1.60934
+console.log(mil * koeff)
+console.log('Расстояние', `${mil}`, 'миль. Равно', `${mil * koeff}`)
+
+
+
+
+
+
+
+
+
+
 
 
 
