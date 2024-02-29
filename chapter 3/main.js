@@ -37,6 +37,20 @@ numbers = [12, 24, 36]
 numbers[5] = 48
 console.log(numbers.length) // numbers [12,24,36, <2 empty items>, 48] ---- итого значение будет 6 у массива.
 
+// ---------------------------------------------------------- Добавление и замена элементов ------------------------------------------------------------------
+
+favoriteFruits = ['grapefruit', 'orange', 'lemon']
+favoriteFruits.push('tangerine')
+let lengthFavoriteFruits = favoriteFruits.push('lime')
+console.log(lengthFavoriteFruits)
+console.log(favoriteFruits)
+
+//        splice
+
+let arrOfShapes=['circle','triangle','rectangle','pentagon']
+arrOfShapes.splice(2,0,'square','trapezoid')  // этот метот начал работу со второго индекса и добавил всё содержимое по условию
+console.log(arrOfShapes)
+
 
 
 
